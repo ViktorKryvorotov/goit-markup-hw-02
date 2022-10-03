@@ -66,7 +66,7 @@ body{
     color: var(--secondary-color);
 }
 /*Чим займаємося*/
-.specialization-tittle, .team-tittle{
+.section-tittle,{
     color: var(--main-color);
 }
 .team{
