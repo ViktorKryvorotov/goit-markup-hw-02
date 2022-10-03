@@ -1,6 +1,94 @@
+/*колір основного тексту #212121;*/
+/*колір допоміжного тексту #757575;*/
+/*білий колір #FFFFFF;*/
+/*акцент  #2196F3;*/
+
 :root {
-    --primary-text-color:rgba(0, 0, 0, 0.25);;
+    --main-font: 'Roboto', sans-serif;
+    /*колір*/
+    --main-color:#212121;
+    --secondary-color:#757575;
+    --akcent-color:#2196F3;
+    --white-color:#FFFFFF;
+    --logo-secondary-color: #000000;
+    --hero-footer-background:#2F303A;
+    --background-team:#F5F4FA;
+    --footer-contact-color:rgba(255, 255, 255, 0.6)
 }
-.logo_nav{
-    color: blue;
+body{
+    background-color:#FFFFFF;;
+    font-family:var(--main-font);
+    color:var(--main-color)
+}
+.list {
+    list-style: none;
+}
+.link {
+    text-decoration: none;
+    font-style: normal;
+}
+ /*Шапка сайту*/
+.logo{
+    color: var(--akcent-color)
+}
+.logo-wrap{
+    color: var(--logo-secondary-color);
+}
+
+.site-nav{
+    color: var(--main-color);
+}
+.site-nav:hover, .site-nav:focus{
+    color: var(--akcent-color);
+}
+.contacts-header {
+    color: var(--secondary-color);
+}
+.contacts-header:hover,.contacts-header:focus {
+    color: var(--akcent-color);
+}
+/*Герой*/
+.hero{
+    background-color:var(--hero-footer-background) ;
+}
+.hero-text{
+    color:var(--white-color);
+}
+.hero-button{
+    background-color: var(--akcent-color);
+    color: var(--white-color);
+}
+/*Наші переваги*/
+.features-tittle{
+    color: var(--main-color);
+}
+.features-text{
+    color: var(--secondary-color);
+}
+/*Чим займаємося*/
+.specialization-tittle, .team-tittle{
+    color: var(--main-color);
+}
+.team{
+    background-color:var(--background-team);
+}
+.team-name{
+    
+}
+.team-text{
+    color: var(--secondary-color);
+}
+
+/*Футер*/
+.footer{
+    background-color:var(--hero-footer-background) ;
+}
+.logo-footer {
+    color: var(--white-color);
+}
+.footer-address{
+    color: var(--white-color);
+}
+.footer-contacts{
+    color:var(--footer-contact-color) ;
 }
