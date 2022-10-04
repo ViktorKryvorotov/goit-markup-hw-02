@@ -13,10 +13,12 @@
     --logo-secondary-color: #000000;
     --hero-footer-background:#2F303A;
     --background-team:#F5F4FA;
+    --button-hover:#188CE8;
     --footer-contact-color:rgba(255, 255, 255, 0.6)
+
 }
 body{
-    background-color:#FFFFFF;
+    background-color:var(--white-color);
     font-family:var(--main-font);
     color:var(--main-color);
     font-size: 14px;
@@ -32,7 +34,6 @@ body{
 .logo{
     color: var(--akcent-color);
     font-family: 'Raleway';
-    font-style: normal;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
@@ -54,6 +55,9 @@ body{
 }
 .contacts-header {
     color: var(--secondary-color);
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
 }
 .contacts-header:hover,.contacts-header:focus {
     color: var(--akcent-color);
@@ -71,11 +75,12 @@ body{
     letter-spacing: 0.06em;
     text-transform: uppercase;
 }
+
 .hero-button{
     background-color: var(--akcent-color);
     color: var(--white-color);
     cursor: pointer;
-    border: var(--akcent-color);
+    border-color:transparent;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     font-family: var(--main-font);
     font-weight: 700;
@@ -83,6 +88,10 @@ body{
     line-height: 1.9;
     text-align: center;
     letter-spacing: 0.06em;
+}
+.hero-button:hover,
+.hero-button:focus {
+    background-color: var(--button-hover)
 }
 /*Наші переваги*/
 .features-tittle{
@@ -94,10 +103,21 @@ body{
 }
 .features-text{
     color: var(--secondary-color);
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
+}
+.visually-hidden{
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
 }
 /*Чим займаємося*/
 .section-tittle{
@@ -119,10 +139,12 @@ body{
 }
 .team-text{
     color: var(--secondary-color);
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.19;
     letter-spacing: 0.03em;
+}
+.list-back{
+    background-color: var(--white-color);
 }
 
 /*Футер*/
@@ -139,6 +161,7 @@ body{
 .footer-contacts{
     color:var(--footer-contact-color) ;
     letter-spacing: 0.03em;
+    line-height:1.71;
 }
 .footer-contacts:hover, .footer-contacts:focus,.footer-address:hover,.footer-address:focus {
     color:var(--akcent-color);
@@ -148,12 +171,13 @@ body{
 /*Проекти*/
 .filter-button{
 color: var(--main-color);
-border: var(--akcent-color);
+border-color: transparent;
 cursor: pointer;
 background: var(--background-team);
+font-family: inherit;
 font-weight: 500;
 font-size: 16px;
-line-height: 1,6;
+line-height: 1.62;
 text-align: center;
 letter-spacing: 0.03em;
 }
@@ -170,9 +194,8 @@ background: var(--akcent-color);
 }
 .project-text{
     color: var(--secondary-color);
-    font-weight: 400;
     font-size: 16px;
-    line-height: 1.9;
+    line-height: 1.88;
     letter-spacing: 0.03em;
 }
 .current{
