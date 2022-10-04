@@ -5,7 +5,7 @@
 
 :root {
     --main-font: 'Roboto', sans-serif;
-    /*колір*/
+    /*колір-змінні*/
     --main-color:#212121;
     --secondary-color:#757575;
     --akcent-color:#2196F3;
@@ -35,7 +35,7 @@ body{
     font-style: normal;
     font-weight: 700;
     font-size: 26px;
-    line-height: 1,19;
+    line-height: 1.19;
     letter-spacing: 0.03em;
     
 }
@@ -46,7 +46,7 @@ body{
 .site-nav{
     color: var(--main-color);
     font-weight: 500;
-    line-height: 1,14;
+    line-height: 1.14;
     letter-spacing: 0.02em
 }
 .site-nav:hover, .site-nav:focus{
@@ -64,6 +64,12 @@ body{
 }
 .hero-text{
     color:var(--white-color);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
 }
 .hero-button{
     background-color: var(--akcent-color);
@@ -71,27 +77,52 @@ body{
     cursor: pointer;
     border: var(--akcent-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    font-family: var(--main-font);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    text-align: center;
+    letter-spacing: 0.06em;
 }
 /*Наші переваги*/
 .features-tittle{
     color: var(--main-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
 }
 .features-text{
     color: var(--secondary-color);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
 }
 /*Чим займаємося*/
 .section-tittle{
-    color: var(--main-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
 }
 /*Команда*/
 .team{
     background-color:var(--background-team);
 }
 .team-name{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
     
 }
 .team-text{
     color: var(--secondary-color);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
 }
 
 /*Футер*/
@@ -103,9 +134,11 @@ body{
 }
 .footer-address{
     color: var(--white-color);
+    letter-spacing: 0.03em;
 }
 .footer-contacts{
     color:var(--footer-contact-color) ;
+    letter-spacing: 0.03em;
 }
 .footer-contacts:hover, .footer-contacts:focus,.footer-address:hover,.footer-address:focus {
     color:var(--akcent-color);
@@ -118,6 +151,11 @@ color: var(--main-color);
 border: var(--akcent-color);
 cursor: pointer;
 background: var(--background-team);
+font-weight: 500;
+font-size: 16px;
+line-height: 1,6;
+text-align: center;
+letter-spacing: 0.03em;
 }
 .filter-button:hover{
 color: var(--white-color);
@@ -125,9 +163,17 @@ background: var(--akcent-color);
 }
 .section-project{
     color: var(--main-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
 }
 .project-text{
     color: var(--secondary-color);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.03em;
 }
 .current{
     color: var(--akcent-color);
