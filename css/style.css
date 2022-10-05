@@ -157,6 +157,7 @@ body{
 .footer-address{
     color: var(--white-color);
     letter-spacing: 0.03em;
+    line-height:1.71;
 }
 .footer-contacts{
     color:var(--footer-contact-color) ;
